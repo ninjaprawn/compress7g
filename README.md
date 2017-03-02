@@ -1,5 +1,5 @@
 # compress7g
-Compress iPod Nano 7g files into Firmware.MSE
+Compress iPod Nano 7g files into Firmware.MSE. Tested with 1.0.2.
 
 # Compile
 
