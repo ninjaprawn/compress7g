@@ -337,10 +337,10 @@ int main(int argc, char **argv) {
 		fwrite(buff, sizeof(char), directories[i].len+LEN_HEADER, test);
 		printf("fw; ");
 
-		// if (!(nano6g_compat && (i == (directories_size-1)))) {
-		// 	fwrite(cert, sizeof(char), 2048, test);
-		// 	printf("cert; ");
-		// }
+		if (!nano6g_compat) {
+			fwrite(cert, sizeof(char), 2048, test);
+			printf("cert; ");
+		}
 		
 		if (nano6g_compat) {
 			for (int j = 0; j < padding0[i]; j++) {
